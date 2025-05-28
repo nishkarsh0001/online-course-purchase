@@ -1,1 +1,16 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environment
+venv/
+
+# Ignore environment variables
 backend/.env
+
+# Ignore SQLite database (optional)
+courses.db
+
+# macOS system file
+.DS_Store
+

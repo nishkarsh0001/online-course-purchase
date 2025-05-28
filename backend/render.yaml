@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: course-platform-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host=0.0.0.0 --port=10000
+    envVars:
+      - key: STRIPE_SECRET_KEY
+        value: "sk_test_51RQruyFdd1LL5iKDJv35t8eC2aWUPbEMlh20Y4cfyWyISy6fbSOCIZxGaBjLsUQpgxjKgR3XSB0vUISwK1yAjLPt00e8dIsHMk"
